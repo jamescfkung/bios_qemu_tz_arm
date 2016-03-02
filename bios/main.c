@@ -518,7 +518,7 @@ void main_init_sec(struct sec_entry_arg *arg)
 	r = fdt_pack(fdt);
 	CHECK(r < 0);
 
-	arg->paged_part = 0;
+	arg->paged_part = TZ_RES_MEM_SIZE;
 	arg->entry = dst;
 
 	/* Look for a header first */
